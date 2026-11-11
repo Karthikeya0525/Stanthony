@@ -1,0 +1,230 @@
+
+.district-explorer {
+  padding: 75px 6%;
+  background: #eef5f9;
+  color: #102a43;
+}
+
+.district-heading {
+  max-width: 760px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.district-heading > span {
+  color: #0284c7;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.district-heading h2 {
+  margin: 12px 0;
+  font-size: clamp(28px, 4vw, 42px);
+  color: #0b2035;
+}
+
+.district-heading p {
+  color: #526579;
+  line-height: 1.7;
+}
+
+.district-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 22px;
+  max-width: 1250px;
+  margin: auto;
+  align-items: stretch;
+}
+
+.district-map-panel,
+.district-information {
+  background: #ffffff;
+  border: 1px solid #dce7ef;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(11, 32, 53, 0.07);
+}
+
+.district-map-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 20px;
+  border-bottom: 1px solid #e5edf3;
+}
+
+.district-map-top strong {
+  font-size: 17px;
+  color: #0b2035;
+}
+
+.district-map-top span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.district-leaflet-map {
+  width: 100%;
+  height: 490px;
+  background: #e6f1f7;
+  z-index: 1;
+}
+
+.leaflet-tooltip {
+  border: 0;
+  border-radius: 6px;
+  background: #0b2035;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map-hint {
+  padding: 12px 18px;
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  border-top: 1px solid #e5edf3;
+}
+
+.district-information {
+  padding: 22px;
+}
+
+.district-information label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.district-information select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd9e4;
+  border-radius: 9px;
+  background: #f8fbfd;
+  color: #102a43;
+  font-size: 15px;
+  outline: none;
+}
+
+.district-information select:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+}
+
+.selected-district-heading {
+  padding: 23px 0 17px;
+  border-bottom: 1px solid #e5edf3;
+}
+
+.selected-district-heading span {
+  color: #0284c7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.selected-district-heading h3 {
+  margin: 7px 0 0;
+  font-size: 27px;
+  color: #0b2035;
+}
+
+.district-impact-list {
+  display: grid;
+  gap: 12px;
+  padding-top: 17px;
+}
+
+.district-impact-card {
+  padding: 14px;
+  border-radius: 11px;
+  background: #f3f8fb;
+  border-left: 3px solid #0ea5e9;
+}
+
+.district-impact-card h4 {
+  margin: 0 0 7px;
+  font-size: 14px;
+  color: #123b59;
+}
+
+.district-impact-card p {
+  margin: 0;
+  color: #526579;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.district-note {
+  max-width: 1250px;
+  margin: 24px auto 0;
+  padding: 18px 20px;
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  background: #e0f2fe;
+}
+
+.district-note strong {
+  color: #075985;
+  font-size: 13px;
+}
+
+.district-note p {
+  margin: 7px 0 0;
+  color: #164e63;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.district-source {
+  max-width: 1250px;
+  margin: 13px auto 0;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.district-message {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #526579;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .district-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .district-leaflet-map {
+    height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .district-explorer {
+    padding: 55px 5%;
+  }
+
+  .district-leaflet-map {
+    height: 350px;
+  }
+
+  .district-information {
+    padding: 17px;
+  }
+
+  .district-map-top {
+    padding: 14px;
+  }
+}

@@ -1,0 +1,84 @@
+
+.school-header {
+  width: 100%;
+  background: #0b2035;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 16px 6%;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.school-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.school-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.school-info h2 {
+  color: white;
+  font-size: 17px;
+  margin: 0;
+  letter-spacing: 0.8px;
+}
+
+.school-info p {
+  color: #a9bfd2;
+  font-size: 11px;
+  margin: 6px 0 0;
+  letter-spacing: 1.5px;
+}
+
+.header-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c4d5e5;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .school-header {
+    padding: 13px 5%;
+  }
+
+  .school-logo {
+    width: 43px;
+    height: 43px;
+  }
+
+  .school-info h2 {
+    font-size: 12px;
+  }
+
+  .school-info p {
+    font-size: 9px;
+    letter-spacing: 0.8px;
+  }
+
+  .header-tag {
+    display: none;
+  }
+}

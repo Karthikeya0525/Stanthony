@@ -1,0 +1,139 @@
+
+.video-library {
+  padding: 65px 6%;
+  background: #f4f8fb;
+}
+
+.video-library-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.video-library-heading {
+  margin-bottom: 35px;
+}
+
+.video-library-label {
+  color: #0891b2;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.video-library-heading h2 {
+  color: #0b2035;
+  font-size: clamp(26px, 4vw, 38px);
+  margin: 12px 0;
+}
+
+.video-library-heading p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.video-card {
+  display: block;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(11, 32, 53, 0.12);
+}
+
+.video-thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #0b2035;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 145, 178, 0.95);
+  color: white;
+  font-size: 19px;
+  padding-left: 3px;
+}
+
+.video-card-content {
+  padding: 20px;
+}
+
+.video-channel {
+  color: #0891b2;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.video-card-content h3 {
+  color: #0b2035;
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 10px 0;
+}
+
+.video-card-content p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+  min-height: 44px;
+}
+
+.watch-link {
+  display: inline-block;
+  color: #087eaa;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .video-library {
+    padding: 45px 5%;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .video-card-content p {
+    min-height: auto;
+  }
+}
