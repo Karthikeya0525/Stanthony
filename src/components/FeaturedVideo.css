@@ -1,15 +1,24 @@
 
-.featured-video {
+.featured-video-section {
   width: 100%;
-  background: #061522;
-  overflow: hidden;
+  padding: 20px 5%;
+  background: #0b2035;
 }
 
-.featured-video-player {
-  display: block;
+.video-container {
+  max-width: 1100px;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #000;
+}
+
+.video-container iframe,
+.video-container video {
   width: 100%;
-  max-height: 600px;
-  height: auto;
-  margin: 0 auto;
-  object-fit: cover;
+  height: 100%;
+  border: none;
+  display: block;
+  object-fit: contain;
 }
