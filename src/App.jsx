@@ -21,7 +21,7 @@ function App() {
   const videoType = "youtube";
 
   const videoUrl =
-    "https://youtu.be/yw3XNZ1bRdE";
+    "https://youtu.be/ufKmsnX0TUI?si=g8IQy7suVzKAy93l";
 
 return (
   <>
